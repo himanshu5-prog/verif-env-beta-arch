@@ -30,6 +30,7 @@ module Beta_tb;
   Beta beta(.bus (stim_if.processor_mp));
   
   //coverage monitor
-  coverage_monitor cov_mon (.bus (stim_if.cov_mon_mp));
+  //coverage_monitor cov_mon (.bus (stim_if.cov_mon_mp));
+  coverage_monitor cov_mon (.INST (inst), .CLK(CLK), .RST(RST));
   
 endmodule: Beta_tb

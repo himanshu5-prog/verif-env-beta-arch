@@ -6,7 +6,7 @@ module clk_generator(output logic CLK);
       forever
         begin
         	#10 CLK = !CLK;
-          if ($time == 400ns) $finish;
+          if ($time == 800ns) $finish;
         end
     end
 endmodule

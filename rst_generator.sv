@@ -3,6 +3,6 @@ module rst_generator (output logic RST);
     begin
       RST = 1'b1;
       
-      #15ns RST = 1'b0;
+      #45ns RST = 1'b0;
     end
 endmodule
